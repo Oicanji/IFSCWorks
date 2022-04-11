@@ -880,9 +880,3 @@ INSERT INTO `generos` (`cod_genero`, `nome_genero`) VALUES
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 
--- Exibe o titulo do filme e o nome do respectivo director somente dos filmes de suspense
-SELECT t.titulo, d.nome_director, g.nome_genero
-FROM filmes t, director d, generos g
-WHERE t.cod_director = d.cod_director
-AND t.cod_genero = g.cod_genero
-AND g.nome_genero = 'Suspense';

@@ -81,5 +81,7 @@ SELECT f.titulo, g.nome_genero
     WHERE f.cod_genero = g.cod_genero
     AND g.nome_genero IN ('Suspense', 'Drama');
 
+-- 
+
 
 
