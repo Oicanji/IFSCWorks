@@ -1,0 +1,129 @@
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d3d3d3;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin:auto;
+    background-color: white;
+    min-height: 100vh;
+    line-height: 2em;
+}
+header, section, nav{
+    border-bottom: 1px solid #CCC;
+    padding: 10px 50px;
+}
+
+section{
+    min-height: 50vh;
+}
+
+header{
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+div:hover{
+    background-image: url("https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec") !important;
+}
+/*Para esta atividade, você não deve alterar absolutamente nada o arquivo HTML.*/
+
+/* 1 - formate os links como achar mais apropriado em seus estados (link, visited, hover, active) */
+a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+a:link{
+    color: rgb(61, 163, 115);
+}
+a:visited{
+    color: rgb(40, 172, 69);
+}
+a:hover{
+    color: rgb(25, 43, 92);
+}
+a:active{
+    color: rgb(200, 255, 0);
+}
+/* 2 - os links devem estar lado a lado (display:inline ou inline-block) */
+a{
+    display: inline-block;
+}
+/* 3 - a pizza do cheff está em falta, esconda esta linha da tabela (display:none) */
+tr:nth-child(4){
+    visibility: hidden;
+    color: aqua;
+}
+/* 4 - faça a tabela ser listrada com cores diferentes */
+tr:nth-child(1){
+    background-color: rgb(255, 0, 0);
+}
+tr:nth-child(2){
+    background-color: rgb(255, 251, 0);
+}
+tr:nth-child(3){
+    background-color: rgb(22, 102, 7);
+}
+tr:nth-child(4){
+    background-color: rgb(0, 0, 255);
+}
+tr:nth-child(5){
+    background-color: rgb(255, 0, 255);
+}
+/* 5 - a primeira linha da tabela (cabeçalho) deve ser com uma cor destaque */
+tr:nth-child(1){
+    background-color: rgb(255, 0, 179);
+    font: 1200;
+    font-size: 1.5em;
+}
+/* 6 - cada seção deve ter uma cor de fundod diferente */
+section:nth-child(1){
+    background-color: rgb(0, 195, 255);
+}
+section:nth-child(2){
+    background-color: rgb(255, 0, 242);
+}
+section:nth-child(3){
+    background-color: rgb(166, 255, 0);
+}
+/* 7 - Títulos devem possui cores diferentes em cada seção. No entanto, os parágrafos das seções devem ser de cores iguais. */
+h1{
+    color: rgb(202, 74, 74);
+}   
+h2{
+    color: rgb(68, 187, 118);
+}
+h3{
+    color: rgb(88, 22, 77);
+}
+h4{
+    color: rgb(147, 199, 79);
+}
+h5{
+    color: rgb(78, 78, 99);
+}
+h6{
+    color: rgb(80, 53, 17);
+}
+/* 8 - adicione "R$" nos preços das pizzas mais nao pegar o primeiro filho */
+td:nth-child(even)::before > td:not(first-child)::before{
+        content: "R$";
+}
+/* 9 - links externos devem possuir uma cor ligeiramente diferente (começa com http) */
+/* 10 - adicione "Rua" antes do nome da rua "Maria Aparecida Barbosa" */
+/* 11 - adicione "bairro antes de "Campo Duna" */
+/* 12 - adicione "Santa Catarina" após o nome da cidade (Garopaba) */
+/* 13 - ao passar o cursor sobre cada linha da tabela, ela deve ser "iluminada" com outra cor (menos o cabeçalho). 
+	 Dica: combinação de pseudo classes */
+/* 14 - o texto do endereço deve ser centralizado */
+/* 15 - Desenvolva 3 exemplos de uso de pseudo-classes que não foram demonstradas pelo professor */
+/* 16 - Desenvolva 2 exemplos de pseudo-elementos que não foram demonstradas pelo professor */
