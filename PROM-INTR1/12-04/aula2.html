@@ -40,6 +40,7 @@
             background-color: gray;
         }
     </style>
+    
 </head>
 <body>
     <!-- navbar bootstrap example  -->
@@ -60,6 +61,13 @@
 
     <div class="container mt-4">
         <h1 class="mt-5 mb-5"> MATEUS É <span class="censored">GADO</span> </h1>
+        <form class="form-inline">
+            <div class="form-group mb-2">
+                <input type="text" minlength="7" maxlength="15" size="15" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
+                <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+            </div>
+        </form>
+        <img src="logoDG_white.svg" alt="My Happy SVG" style="background-color:rgb(58, 58, 58)"/>
         <div class="row">
             <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit deserunt cum id, eius saepe fugiat sed culpa, neque quidem enim, aliquid placeat necessitatibus accusantium porro? Officia deserunt odio deleniti.</p>
